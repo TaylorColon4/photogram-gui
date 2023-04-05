@@ -9,7 +9,7 @@ end
 
 def show 
   #Parameters: {"path_username"=>"anisa"}
-url_username = params.fetch("path_username")
+  url_username = params.fetch("path_username")
 
   matching_usernames = User.where({ :username => url_username })
 
